@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/32x32.png">
+        <title>Calculator</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="cal">
+                <div class="cal__display">
+                    <div class="cal__display-item cal__expression">
+                        <p class="cal__operand1">0</p>
+                        <p class="cal__operator"></p>
+                        <p class="cal__operand2"></p>
+                    </div>
+                    <div class="cal__display-item cal__result small"></div>
+                </div>
+                <div class="cal__btns">
+                    <div class="cal__number">
+                        <div class="cal__number-group">
+                            <div class="cal__number-clear cal__number-btn--medium">C</div>
+                            <div class="cal__number-sign cal__number-btn--medium">
+                                <i class="fa-solid fa-plus-minus"></i>
+                            </div>
+                            <div class="cal__number-percent cal__number-btn--medium">
+                                <i class="fa-solid fa-percent"></i>
+                            </div>
+                        </div>
+                        <div class="cal__number-group">
+                            <div class="cal__number-btn cal__number-btn--medium">7</div>
+                            <div class="cal__number-btn cal__number-btn--medium">8</div>
+                            <div class="cal__number-btn cal__number-btn--medium">9</div>
+                        </div>
+                        <div class="cal__number-group">
+                            <div class="cal__number-btn cal__number-btn--medium">4</div>
+                            <div class="cal__number-btn cal__number-btn--medium">5</div>
+                            <div class="cal__number-btn cal__number-btn--medium">6</div>
+                        </div>
+                        <div class="cal__number-group">
+                            <div class="cal__number-btn cal__number-btn--medium">1</div>
+                            <div class="cal__number-btn cal__number-btn--medium">2</div>
+                            <div class="cal__number-btn cal__number-btn--medium">3</div>
+                        </div>
+                        <div class="cal__number-group">
+                            <div class="cal__number-btn cal__number-btn--large">0</div>
+                            <div class="cal__number-comma cal__number-btn--medium">.</div>
+                        </div>
+                    </div>
+                    <div class="cal__func">
+                        <div class="cal__func-btn divide">
+                            <i class="fa-solid fa-divide"></i>
+                        </div>
+                        <div class="cal__func-btn times">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="cal__func-btn subtract">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <div class="cal__func-btn add">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="cal__func-btn equal">
+                            <i class="fa-solid fa-equals"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>

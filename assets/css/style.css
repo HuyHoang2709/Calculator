@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(140deg, #B560D4, #FF956B);
+}
+
+.cal {
+    width: 360px;
+    height: 480px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+.cal__display {
+    width: 100%;
+    height: 160px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cal__display-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cal__expression {
+    margin-top: auto;
+    font-size: 5.4rem;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cal__expression.active {
+    flex: 1;
+    font-size: 1.6rem;
+    color: #888;
+    font-weight: 400;
+}
+
+.cal__expression p {
+    margin-left: 8px;
+}
+
+.cal__result {
+    flex: 2;
+    font-size: 5.4rem;
+    font-weight: 500;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.medium {
+    font-size: 4.4rem;
+}
+
+.small {
+    font-size: 3.2rem;
+}
+
+.tiny {
+    font-size: 2.2rem;
+}
+
+.show {
+    display: flex;
+}
+
+.cal__btns {
+    height: 320px;
+    display: flex;
+}
+
+.cal__number {
+    flex: 3;
+}
+
+.cal__number-group {
+    display: flex;
+}
+
+.cal__number-btn,
+.cal__number-sign,
+.cal__number-comma, 
+.cal__number-clear,
+.cal__number-percent {
+    font-size: 2rem;
+    background-color: #eee;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    user-select: none;
+    font-weight: 500;
+}
+
+.cal__number-btn:hover,
+.cal__func-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.cal__number-btn:active,
+.cal__number-sign:active,
+.cal__number-clear:active,
+.cal__number-percent:active {
+    background-color: #333;
+    color: #fff;
+}
+
+.cal__number-comma--active {
+    background-color: #333;
+    color: #fff;
+}
+
+.cal__number-btn--medium {
+    width: 90px;
+}
+
+.cal__number-btn--large {
+    width: 180px;
+}
+
+.cal__func {
+    flex: 1;
+}
+
+.cal__func-btn {
+    width: 90px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    background-color: orange;
+    border-top: 1px solid #aaa;
+    user-select: none;
+} 
+
+.cal__func-btn:active {
+    color: orange;
+    background-color: #fff;
+}
