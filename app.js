@@ -35,6 +35,7 @@ var percentDecimal = 0;
 var result;
 var temp;
 var resultLength;
+var expressionLength;
 
 function displayHandler() {
     if(hasOperator === false) {
